@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Existing Project Styles */
+    #projects {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    #projects h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-box {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: calc(25% - 20px);
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .project-box:hover {
+      transform: scale(1.05);
+    }
+
+    .project-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .view-project-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #5673C8;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .view-project-btn:hover {
+      background-color: #3d5a99;
+    }
+
+    @media (max-width: 1024px) {
+      .project-box {
+        width: calc(33.33% - 20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-box {
+        width: calc(100% - 20px);
+      }
+    }
+
+    /* New Skills Section Styling */
+    #skills {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    #skills h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #1a73e8;
+    }
+
+    #skills h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      color: #444;
+      border-bottom: 2px solid #1a73e8;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    #skills ul {
+      list-style-type: none;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    #skills ul li {
+      margin: 0.5rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    #skills ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      #skills {
+        padding: 1rem;
+      }
+
+      #skills h2 {
+        font-size: 1.5rem;
+      }
+
+      #skills h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <div class="header-row">
+      <div class="box">
+        <h1>Hasini Kadali</h1>
+      </div>
+      <div class="box">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- home -->
+    <div class="row" id="home">
+      <div style="display: flex; padding-top: 50px;">
+        <div class="box">
+          <h1>Full Stack in Progress</h1>
+          <p>
+            Currently on a journey to master full-stack development, focusing on both the front-end and back-end
+            technologies. The goal is to build dynamic, interactive, and scalable web applications by gaining expertise
+            in HTML, CSS, JavaScript, and the MERN stack (MongoDB, Express.js, React, and Node.js). With each project,
+            there's a focus on learning how to efficiently manage data, create seamless user interfaces, and implement
+            robust back-end systems.
+          </p>
+          <button onclick="window.open('https://www.linkedin.com/in/hasini-kadali-64ab96303/', '_blank')">LinkedIn</button>
+          <a href="/HasiniKadali (2) (1).pdf" download><button>Download CV</button></a>
+        </div>
+        <div class="box">
+          <img src="/laptop.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects">
+      <h1>Projects</h1>
+      <div class="project-container">
+        <!-- All project boxes (unchanged) -->
+        <!-- ... -->
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about" class="row">
+      <h1>About</h1>
+      <h3>
+        I am an undergraduate student who enjoys working with data and creating websites.
+        I love turning information into visuals that tell a story and make things easier to understand.
+        I’m always eager to learn new skills and explore different ideas, whether it’s through web development or data visualization.
+        In my free time, I like spending time with myself and listening to music.
+      </h3>
+    </div>
+
+    <!-- skills section -->
+    <div id="skills">
+      <h2>Skills</h2>
+
+      <h3>💻 Technical Skills</h3>
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Java, Python, React.js</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, REST APIs</li>
+        <li><strong>Tools & Platforms:</strong> Git, VS Code, IntelliJ IDEA, Node.js, Postman</li>
+        <li><strong>Database:</strong> MySQL, MongoDB</li>
+        <li><strong>Version Control:</strong> Git & GitHub</li>
+      </ul>
+
+      <h3>🤝 Non-Technical Skills</h3>
+      <ul>
+        <li>Problem-Solving</li>
+        <li>Critical Thinking</li>
+        <li>Team Collaboration</li>
+        <li>Agile Methodology</li>
+        <li>Communication Skills</li>
+        <li>Time Management</li>
+      </ul>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
+      <h1>Contact</h1>
+      <div style="display: flex">
+        <div class="box">
+          <h3>Contact Form</h3>
+          <p><input type="text" placeholder="Enter Name"></p>
+          <p><input type="email" placeholder="Enter Email"></p>
+          <p><textarea rows="10" cols="60" placeholder="Enter message"></textarea></p>
+          <button>Send</button>
+        </div>
+
+        <div class="box">
+          <h3>Name</h3>
+          <p><b>Address: </b>Hyderabad, Telangana</p>
+          <p><b>Email Address: </b>kadalihasini1930@gmail.com</p>
+          <p><b>Phone Number: </b>+91 9949800130</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">@copyright 2024. All rights reserved.</div>
+  </div>
+</body>
+</html>
